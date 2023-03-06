@@ -28,6 +28,11 @@ jobs:
             arch: [linux/amd64, linux/arm64, linux/arm/v7]
             tags: webguruseu/bitbucket-pipelines-phpdockerio:php82
 
+          - name: php82
+            file: php82.Dockerfile
+            arch: [ linux/amd64, linux/arm64, linux/arm/v7 ]
+            tags: webguruseu/bitbucket-pipelines-phpdockerio:latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
