@@ -53,7 +53,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
-          file: ${{ matrix.targets.primary.tags }}
+          file: ${{ matrix.file }}
           platforms: ${{ join(matrix.arch, ',') }}
           push: ${{ github.ref == 'refs/heads/main' }}
           pull: true
