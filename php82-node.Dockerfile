@@ -24,6 +24,9 @@ RUN ln -s /usr/bin/php${PHP_VERSION} /usr/bin/php
 # install nodejs
 RUN apk add --no-cache nodejs
 
+# install npm
+RUN apk add --no-cache npm
+
 # Install glibc to run Bun
 RUN if [[ $(uname -m) == "aarch64" ]] ; \
     then \
