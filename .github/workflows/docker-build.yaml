@@ -38,6 +38,11 @@ jobs:
             arch: [ linux/amd64, linux/arm64, linux/arm/v7 ]
             tags: webguruseu/bitbucket-pipelines-phpdockerio:php82-node
 
+          - name: php82-bun
+            file: php82-bun.Dockerfile
+            arch: [ linux/amd64, linux/arm64, linux/arm/v7 ]
+            tags: webguruseu/bitbucket-pipelines-phpdockerio:php82-bun
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
